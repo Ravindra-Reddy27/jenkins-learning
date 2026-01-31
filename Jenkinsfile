@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Ravindra-Reddy27/jenkins-learning.git'
+                git branch: 'main',
+                    url: 'https://github.com/Ravindra-Reddy27/jenkins-learning.git'
             }
         }
 
