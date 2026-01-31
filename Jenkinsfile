@@ -19,8 +19,8 @@ pipeline {
         stage('Stop & Remove Old Container') {
             steps {
                 sh '''
-                docker stop aditya || true
-                docker rm aditya || true
+                docker stop azure || true
+                docker rm azure || true
                 '''
             }
         }
